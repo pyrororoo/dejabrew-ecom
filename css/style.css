@@ -23,10 +23,18 @@
   font-family: 'Aurora', sans-serif;
 }
 
-.important
+
 /* NAVBAR */
 .navbar {
   background: #FFF2E1;
+}
+
+.navbar-nav{
+  gap: 3vmax;  
+}
+
+div.collapse.navbar-collapse {
+  margin-right: 1vmax;
 }
 
 .logo {

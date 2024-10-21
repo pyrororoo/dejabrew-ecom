@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deja Brew</title>
-
+  <link rel="icon" href="./assets/icon.svg" type="image/svg">
   <!-- custom css -->
   <link rel="stylesheet" href="./css/style.css">
   
@@ -19,6 +19,8 @@
   <link href="https://fonts.cdnfonts.com/css/caraque-trial" rel="stylesheet">
                 
   
+  <!-- icons -->
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -27,27 +29,56 @@
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg">
-    
+
     <div class="container-fluid">
       <a href="#"><img class="logo" src="./assets/logo.svg" alt="deja brew logo"></a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+      <div class="collapse navbar-collapse btn-group " id="navbarText">
+        
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+          <li class="nav-item ms-auto">
+
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+
+            <ul class="dropdown-menu ms-auto">
+              <li><a href="#" class="dropdown-item">All Items</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a href="#" class="dropdown-item">Coffee</a></li>
+              <li><a href="#" class="dropdown-item">Meals</a></li>
+              <li><a href="#" class="dropdown-item">Snacks</a></li>
+              <li><a href="#" class="dropdown-item">Other Beverages</a></li>
+            </ul>
+
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+
+            <ul class="dropdown-menu pull-right">
+              <li><a href="#" class="dropdown-item">Item1</a></li>
+            </ul>
+
           </li>
+
+          <li class="nav-item"><a class="nav-link" href="#">Locations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gift Card</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><img src="./assets/icons/shopping-bag.svg" alt=""></a></li>
+
         </ul>
-      
+
       </div>
+
+
     </div>
   </nav>
 
@@ -71,7 +102,24 @@
   </div>
   <!-- MARQUEE END -->
 
-  
+
+  <!-- HEADLINE -->
+  <div class="headline">
+    
+  </div>
+  <!-- HEADLINE END -->
+
+
+  <!-- MENU -->
+  <div class="menu">
+
+    <!-- BEST SELLERS -->
+
+    <!-- SPECIALS -->
+
+  </div>
+
+  <!-- MENU END -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
