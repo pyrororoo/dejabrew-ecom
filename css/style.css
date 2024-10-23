@@ -13,10 +13,31 @@
   src: url(../assets/fonts/AURORA-Regular.ttf);
 }
 
+.btn-primary {
+  color: #3C2F2F !important;
+  background: #FFF2E1 !important;
+  border-radius: 10em !important;
+  border: 2px solid #3C2F2F !important;
+  padding: .5em 4em !important;
+  box-shadow: 0 0 0 0 #3C2F2F !important;
+  font-family: 'Caraque Trial', sans-serif !important;
+  transition: all 0.3s ease-in-out; 
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 #3C2F2F !important;
+};
+
+.btn-primary:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 #3C2F2F !important;
+}
+
 .sub-header {
   font-family: 'Caraque Trial', sans-serif;
-  font-size: large;
-  color: #854442;
+  font-size: x-large;
+  color: #854442 !important;
 }
 
 .header {
@@ -166,4 +187,73 @@ section.menu {
 div.menu {
   padding: 100px 0;
 }
+
+.menu {
+
+  .row {
+
+    .card {
+      border: #3C2F2F solid 2px;
+      border-radius: 2em;
+    }
+
+    img.card-img-top{
+      width: 50%;
+      height: auto;
+      margin-top: 50px;
+    }
+  
+    p.card-text {
+      text-align: justify;
+    }
+
+    span.price {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #854442;
+    }
+
+    .btn-primary {
+      padding: 2% 25% !important;
+      background: #854442 !important;
+      color: #FFF2E1 !important;
+
+    }
+
+    button {
+      display: block !important;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 5%;
+    }
+
+    .btn-group {
+      border: #7b7b7b solid thin;
+
+      .btn {  
+        color: #3C2F2F;
+      }
+
+      .plus, .minus {
+        color: #7b7b7b !important;
+      }
+
+      .btn.btn-arith:hover {
+        background: #dadada;
+      }
+
+      .quant:hover {
+        cursor: text;
+      }
+
+    }
+
+
+
+  }
+}
+
 /* MENU END */
