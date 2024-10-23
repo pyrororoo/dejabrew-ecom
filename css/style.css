@@ -40,7 +40,7 @@
   color: #854442 !important;
 }
 
-.header {
+.heading {
   font-family: 'Aurora', sans-serif;
 }
 
@@ -190,11 +190,20 @@ div.menu {
 
 .menu {
 
+  h3 {
+    text-align: center;
+    font-size: 5vmax;
+    color: #FFF2E1;
+  }
+
   .row {
+
+    gap: 2rem;
 
     .card {
       border: #3C2F2F solid 2px;
       border-radius: 2em;
+      max-width: 50vmax;
     }
 
     img.card-img-top{
@@ -214,10 +223,9 @@ div.menu {
     }
 
     .btn-primary {
-      padding: 2% 25% !important;
+      padding: 2% 10% !important;
       background: #854442 !important;
       color: #FFF2E1 !important;
-
     }
 
     button {
