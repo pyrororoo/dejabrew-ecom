@@ -272,7 +272,7 @@ div.see-all-products {
 
   div.collapsable {
 
-    border: red solid thin;
+    /* border: red solid thin; */
     margin: 20px 20px 20px 0px;
 
     h3 {
@@ -284,14 +284,36 @@ div.see-all-products {
     }
 
     section {
-      border: red solid thin;
+      display: flex;
+      border-bottom: #acacac solid 2px;
+      margin-top: 20px; 
+      justify-content: space-between;
+
     }
 
-  
+    a {
+      text-decoration: none;
+
+    }
+
+    div.card {
+      border: none !important;
+    }
 
   } 
 
 }
 
+.arrow {
+  transition: 0.5s;
+}
+
+  .arrow:not(.collapsed) {
+    transform: rotate(180deg);
+  }
+
+  .arrow:is(.collapsed) {
+    transform: rotate(0deg);
+  }
 
 /* MENU END */
