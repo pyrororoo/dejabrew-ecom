@@ -111,6 +111,7 @@ div.collapse.navbar-collapse {
   padding-left: 4.8rem;
 }
 
+
 .wavy {
   background: #239E86;
 
@@ -131,6 +132,13 @@ div.collapse.navbar-collapse {
   }
   
 }
+
+/* @keyframes marquee-stop-text {
+  to {
+    transform: translateX(0);
+  }
+  
+} */
 
 /* MARQUEE END */
 
@@ -254,7 +262,7 @@ div.see-all-products {
   display: flex;
   flex-direction: row;
   max-width: 82%;
-  margin: 20px auto;
+  margin: 30px auto;
   border-radius: 2em !important;
   border: #3C2F2F solid 2px;
 
@@ -328,3 +336,61 @@ div.see-all-products {
   }
 
 /* MENU END */
+
+/* FOOTER */
+
+footer {
+
+  object {
+    margin-top: 50px;
+    margin-left: 7%;
+    max-width: 250px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  div.footer-content {
+
+    display: flex;
+    gap:20%;
+    
+
+    h4 {
+      font-weight: bolder;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: medium;
+    }
+    
+    h4, a {
+      color:#854442;
+    }
+
+    a:hover{
+      text-decoration: underline;
+      transition: text-decoration 0.3s ease-in-out;
+    }
+
+    ul {
+      margin: 40px 5%;
+    }
+  }
+
+  .bottom {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    background: #239E86;
+    
+    p {
+      color: white;
+      font-size: larger;
+    }
+
+  }
+}
+/* FOOTER END */
