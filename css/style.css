@@ -36,12 +36,15 @@
 
 .sub-header {
   font-family: 'Caraque Trial', sans-serif;
-  font-size: x-large;
   color: #854442 !important;
 }
 
 .heading {
   font-family: 'Aurora', sans-serif;
+}
+
+.reddish-text {
+  color:#854442 !important;
 }
 
 body {
@@ -283,12 +286,16 @@ div.see-all-products {
       text-align: justify;
     }
 
+    p.disclaimer {
+      font-size: small;
+      color: #7b7b7b;
+    }
+
     section {
       display: flex;
       border-bottom: #acacac solid 2px;
       margin-top: 20px; 
       justify-content: space-between;
-
     }
 
     a {
@@ -302,9 +309,13 @@ div.see-all-products {
 
   } 
 
+  .location {
+    font-weight: bolder;
+  }
+
 }
 
-.arrow {
+.arrow { /* rotating dropdown arrow :3 */
   transition: 0.5s;
 }
 

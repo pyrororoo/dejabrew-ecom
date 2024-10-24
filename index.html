@@ -243,36 +243,87 @@
 
       <div class="collapsable">
 
-        <h3 class="sub-header">About Us</h3>
+        <h3 class="heading reddish-text">About Us</h3>
 
         <p>
           At Deja Brew, we believe that every cup of coffee tells a story. Nestled in the heart of Bicol, our café is dedicated to serving high-quality brews, delicious meals, and delightful pastries. With a passion for creating a warm, welcoming environment, we strive to be the perfect spot for catching up with friends, enjoying a quiet moment, or fueling your day with exceptional flavors. Our team is committed to using locally sourced ingredients, ensuring that every bite and sip supports our vibrant community.
         </p>
         
 
+        <!-- locations -->
         <section class="collapsable sub-header" onclick="toggleDropdown()" data-bs-toggle="collapse" href="#locations" role="button" aria-expanded="false" aria-controls="locations">
-          <a class="collapsable sub-header" onclick="toggleDropdown()" data-bs-toggle="collapse" href="#locations" role="button" aria-expanded="false" aria-controls="locations">
+          <h4 class="collapsable sub-header" onclick="toggleDropdown()" data-bs-toggle="collapse" href="#locations" role="button" aria-expanded="false" aria-controls="locations">
             Where are we located?
-          </a>
+          </h4>
           <object data="./assets/icons/drop-down.svg" class="arrow collapsed" role="button" data-bs-toggle="collapse" href="#locations" aria-expanded="false" aria-controls="locations" ></object> 
        </section>
 
         <div class="collapse" id="locations">
           <div class="card card-body">
-            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+
+            <p class="disclaimer"><i>Disclaimer: None of these locations are real</i></p>
+
+            <!-- list of locs -->
+            <ol>
+              <li>
+                <h5 class="sub-header">Deja Brew Legazpi</h5>
+                <p>
+                  <span class="location">123 Rizal Street, Legazpi City, Albay</span><br>
+                  Monday to Friday: 7:00 AM - 9:00 PM <br>
+                  Saturday & Sunday: 8:00 AM - 10:00 PM 
+                </p>
+              </li>
+
+              <li>
+                <h5 class="sub-header">Deja Brew Daraga</h5>
+                <p>
+                  <span class="location">456 Mayon Avenue, Daraga, Albay</span><br>
+                  Monday to Friday: 6:30 AM - 8:30 PM<br>
+                  Saturday & Sunday: 7:00 AM - 9:00 PM 
+                </p>
+              </li>
+
+              <li>
+                <h5 class="sub-header">Deja Brew Tabaco</h5>
+                <p>
+                  <span class="location">789 Pio Duran Road, Tabaco City, Albay</span><br>
+                  Monday to Friday: 8:00 AM - 8:00 PM <br>
+                  Saturday: 8:00 AM - 10:00 PM <br>
+                  Sunday: Closed
+                </p>
+              </li>
+            </ol>
+
+            <!-- list of locs end -->
+
           </div>
         </div>
         
+        <!-- faqs -->
         <section class="collapsable sub-header" data-bs-toggle="collapse" href="#FAQs" role="button" aria-expanded="false" aria-controls="FAQs">
-          <a class="collapsable sub-header" data-bs-toggle="collapse" href="#FAQs" role="button" aria-expanded="false" aria-controls="FAQs">
+          <h4 class="collapsable sub-header" data-bs-toggle="collapse" href="#FAQs" role="button" aria-expanded="false" aria-controls="FAQs">
             Frequently asked questions
-          </a>
+          </h4>
           <object data="./assets/icons/drop-down.svg" class="arrow collapsed" role="button" data-bs-toggle="collapse" href="#FAQs" aria-expanded="false" aria-controls="FAQs" ></object> 
         </section>
 
         <div class="collapse" id="FAQs">
           <div class="card card-body">
-            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            <p>
+
+              <span class="sub-header" style="font-size: 20px;">Q: Can I order pastries for special events?</span> <br>
+              A: Absolutely! We take special orders for pastries and can accommodate various events. Please contact us ahead of time to discuss your needs.
+              <br><br>
+              <span class="sub-header" style="font-size: 20px;">Q: Do you have Wi-Fi available?</span> <br>
+              A: Yes, all our locations offer free Wi-Fi, making it easy for you to work or study while enjoying your favorite drinks.
+              <br><br>
+              <span class="sub-header" style="font-size: 20px;">Q: Do you make accommodations for people with allergies?</span><br>
+              A: Of course! Don't hesitate to inform our staffs of any diet restrictions you may have as we would be glad to accommodate and care for you as best as we can.
+              <br><br>
+              <span class="sub-header" style="font-size: 20px;">Q: Do you offer in-store pick-up?</span><br>
+              A: Yes, you may choose between deliveries and pick-ups.
+              
+            </p>
           </div>
         </div>
 
