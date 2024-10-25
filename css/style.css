@@ -149,6 +149,10 @@ div.collapse.navbar-collapse {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  h1 {
+    font-size: 70px;
+  }
 }
 
 .headline-container img {
@@ -394,3 +398,36 @@ footer {
   }
 }
 /* FOOTER END */
+
+@media screen and (max-width: 1200px) {
+  .headline-container {
+    
+    img {
+      opacity: 0; 
+      /* figure out how to hide this at certain breakpoints */
+    }
+
+    .headline {
+      h1, p {
+        text-align: center;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 800px) { /* for phones and below*/
+
+  div.see-all-products {
+    flex-direction: column;
+
+    a {
+      max-width: 100%;
+    }
+
+    div.collapsable {
+      margin: 0 5% 10% 5%;
+      /* border: red solid thin; */
+    }
+  }
+}
