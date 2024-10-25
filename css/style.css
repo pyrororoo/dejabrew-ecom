@@ -73,6 +73,10 @@ body {
   gap: 3vmax; 
 }
 
+.nav-link:hover {
+  color:#239E86 !important; 
+}
+
 div.collapse.navbar-collapse {
   margin-right: 1vmax;
 }
@@ -82,6 +86,42 @@ div.collapse.navbar-collapse {
   margin: 1vmax 2vmax 1vmax 1vmax;
 }
 
+span.nav-link {
+  display: none;
+}
+
+@media screen and (max-width:991.5px) {
+  
+  .nav-item.btn-group {
+    flex-direction: column;
+
+    .btn.dropdown-toggle {
+      text-align: left;
+    }
+  }
+
+  ul.dropdown-menu {
+    display: block;
+    background: none;
+    border: none;
+
+    a {
+      color: inherit;
+      margin-left: 5px;
+    }
+
+    a:hover {
+      background-color: none !important;
+    }
+
+  }
+
+  span.nav-link {
+    margin-left: 5px;
+    display: inline;
+  }
+
+}
 
 /* NAVBAR END */
 
@@ -219,6 +259,13 @@ div.menu {
       border: #3C2F2F solid 2px;
       border-radius: 2em;
       max-width: 50vmax;
+      transition: all 0.1s ease-in-out;
+    }
+
+    .card:hover{
+      transform: translateY(-4px) translateX(-2px);
+      box-shadow: 8px 8px #3C2F2F;
+      
     }
 
     img.card-img-top{
@@ -282,15 +329,16 @@ div.menu {
 /* ABOUT US */
 
 div.about-us.landing-page {
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   max-width: 82%;
-  margin: 30px auto;
+  margin: 20px auto;
   border-radius: 2em !important;
   border: #3C2F2F solid 2px;
+  box-shadow: none;
   gap: 2%;
+  transition: all 0.1s ease-in-out;
 
   img.border-container {
     padding: 0;
@@ -349,6 +397,7 @@ div.about-us.landing-page {
       font-size: larger;
       color: #239E86;
       font-weight: 500;
+      transition: all 0.1s ease-in-out;
     }
 
     a.see-our-menu:hover {
@@ -362,6 +411,11 @@ div.about-us.landing-page {
     font-weight: bolder;
   }
 
+}
+
+div.about-us.landing-page:hover{
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 8px 8px #3C2F2F;
 }
 
 .arrow { /* rotating dropdown arrow :3 */
@@ -433,6 +487,11 @@ footer {
     p {
       color: white;
       font-size: larger;
+    }
+
+    a span{
+      color: white;
+      margin-right: 5px;
     }
 
   }

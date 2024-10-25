@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deja Brew</title>
   <link rel="icon" href="./assets/icon.svg" type="image/svg">
+
   <!-- custom css -->
   <link rel="stylesheet" href="./css/style.css">
+
+  <!-- font-awesome css -->
+  <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.css">
   
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
@@ -28,42 +32,28 @@
 
     <div class="container-fluid">
       <a href="./index.html"><object class="logo" data="./assets/logo.svg"></object></a>
-
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse btn-group" id="navbarText">
+      <div class="collapse navbar-collapse" id="navbarText">
         
-        <ul class="navbar-nav mb-2 mb-lg-0 ms-auto dropdown">
+        <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
 
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           
+          <li class="nav-item"><a class="nav-link" href="./pages/menu.html">Menu</a></li>
+
           <li class="nav-item btn-group">
 
-            <a class="btn nav-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+            <a class="btn nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
 
             <ul class="dropdown-menu">
-              <li><a href="./pages/menu.html" class="dropdown-item">All Items</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a href="./pages/menu.html/#coffee" class="dropdown-item">Coffee</a></li>
-              <li><a href="./pages/menu.html/#meals" class="dropdown-item">Meals</a></li>
-              <li><a href="./pages/menu.html/#snacks" class="dropdown-item">Snacks</a></li>
-              <li><a href="./pages/menu.html/#beverages" class="dropdown-item">Other Beverages</a></li>
-            </ul>
-
-          </li>
-          
-          <li class="nav-item btn-group">
-
-            <a class="btn nav-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
-
-            <ul class="dropdown-menu">
-              <li><a href="./pages/who-are-we.html" class="dropdown-item" target="_blank">Who are we?</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a href="./pages/frequently-asked-questions.html" class="dropdown-item" target="_blank">FAQs</a></li>
+              <li><a href="./pages/who-are-we.html" class="dropdown-item nav-link" target="_blank">Who are we?</a></li>
+              <li><a href="./pages/frequently-asked-questions.html" class="dropdown-item nav-link" target="_blank">FAQs</a></li>
             </ul>
 
           </li>
@@ -73,7 +63,7 @@
           <li class="nav-item"><a class="nav-link" href="./pages/locations.html">Locations</a></li>
           <li class="nav-item"><a class="nav-link" href="./pages/gift-card.html" target="_blank">Gift Card</a></li>
           <li class="nav-item"><a class="nav-link" href="./pages/contact-us.html">Contact Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><img src="./assets/icons/shopping-bag.svg" alt="" draggable="false"></a></li>
+          <li class="nav-item"><a class="nav-link fa fa-shopping-cart fa-2x" href="./pages/cart.html"><span class="nav-link">Cart</span></a></li>
 
         </ul>
 
@@ -155,85 +145,10 @@
   <!-- MENU -->
 
   <section class="menu">
+
     <div class="menu">
 
-      <!-- BEST SELLERS -->
-
-      <div class="best-seller">
-        
-        
-      <h3 class="heading">Our Best Sellers</h3>
       
-      <br>
-
-      <div class="row justify-content-center">
-
-        <!-- Card #1 -->
-        <div class="card col-sm-6 mb-3 mb-sm-0" style="width: 25rem;">
-            <center><img src="./assets/menu-items/caramel-macchiato.png" alt="" class="card-img-top center-block" draggable="false"></center>
-            <div class="card-body">
-             <h5 class="card-title sub-header">Caramel cloud latte</h5>
-             <p class="card-text"><span class="price"> Php 60.00 (12 oz) Php 70.00 (16 oz)</span> <br> <br>
-              Float on a caramel cloud with this luscious latte. Rich espresso pairs with silky steamed milk, finished off with a caramel drizzle and fluffy whipped cream for a heavenly treat.             </p>
-              
-              <div class="buttons">
-                <a href="" class="btn btn-primary">Add to Cart</a>
-                <div class="btn-group" role="group" aria-label="Add product">
-                  <button type="button" class="btn btn-arith"> + </button>
-                  <button type="button" class="btn btn-arith quant"> 1 </button>
-                  <button type="button" class="btn btn-arith"> - </button>
-                </div>
-              </div>
-
-            </div>
-        </div>
-
-        <!-- Card #2 -->
-        <div class="card col-sm-6 mb-3 mb-sm-0" style="width: 25rem;">
-          <center><img src="./assets/menu-items/Morning Bliss.png" alt="" class="card-img-top center-block" draggable="false"></center>
-          <div class="card-body">
-           <h5 class="card-title sub-header">Morning Bliss</h5>
-           <p class="card-text"><span class="price"> Php 40.00</span> <br> <br>
-            Start your day with a velvety smooth espresso layered with creamy steamed milk and a subtle touch of vanilla for a balanced, cozy flavor. Perfect for those who crave a gentle sweetness in their coffee.
-            <div class="buttons">
-              <a href="" class="btn btn-primary">Add to Cart</a>
-              <div class="btn-group" role="group" aria-label="Add product">
-                <button type="button" class="btn btn-arith"> + </button>
-                <button type="button" class="btn btn-arith quant"> 1 </button>
-                <button type="button" class="btn btn-arith"> - </button>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Card #3 -->
-        <div class="card col-sm-6 mb-3 mb-sm-0" style="width: 25rem;">
-          <center><img src="./assets/menu-items/Childhood Sweetheart.png" alt="" class="card-img-top center-block" draggable="false"></center>
-          <div class="card-body">
-           <h5 class="card-title sub-header">Childhood Sweetheart</h5>
-           <p class="card-text"><span class="price"> Php 120.00 (6 pieces)</span> <br> <br>
-            A sweet delight to satisfy your sweet tooth. Treat a sweetheart with a perfectly crumbly biscuit beneath a flavorful frosting and bask in your snack-induced daydream.</p>
-            
-            <div class="buttons">
-              <a href="" class="btn btn-primary">Add to Cart</a>
-              <div class="btn-group" role="group" aria-label="Add product">
-                <button type="button" class="btn btn-arith"> + </button>
-                <button type="button" class="btn btn-arith quant"> 1 </button>
-                <button type="button" class="btn btn-arith"> - </button>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        
-      </div>
-      
-    </div>
-
-    <!-- BEST SELLERS END -->
-
-
     
     <!-- ABOUT US -->
     
@@ -338,6 +253,84 @@
     </div>
     <!-- ABOUT US END -->
 
+      <!-- BEST SELLERS -->
+
+      <div class="best-seller">
+        
+        
+      <h3 class="heading">Our Best Sellers</h3>
+      
+      <br>
+
+      <div class="row justify-content-center">
+
+        <!-- Card #1 -->
+        <div class="card col-sm-6 mb-3 mb-sm-0" style="width: 25rem;">
+            <center><img src="./assets/menu-items/caramel-macchiato.png" alt="" class="card-img-top center-block" draggable="false"></center>
+            <div class="card-body">
+             <h5 class="card-title sub-header">Caramel cloud latte</h5>
+             <p class="card-text"><span class="price"> Php 60.00 (12 oz) Php 70.00 (16 oz)</span> <br> <br>
+              Float on a caramel cloud with this luscious latte. Rich espresso pairs with silky steamed milk, finished off with a caramel drizzle and fluffy whipped cream for a heavenly treat.             </p>
+              
+              <div class="buttons">
+                <a href="" class="btn btn-primary">Add to Cart</a>
+                <div class="btn-group" role="group" aria-label="Add product">
+                  <button type="button" class="btn btn-arith"> + </button>
+                  <button type="button" class="btn btn-arith quant"> 1 </button>
+                  <button type="button" class="btn btn-arith"> - </button>
+                </div>
+              </div>
+
+            </div>
+        </div>
+
+        <!-- Card #2 -->
+        <div class="card col-sm-6 mb-3 mb-sm-0" style="width: 25rem;">
+          <center><img src="./assets/menu-items/Morning Bliss.png" alt="" class="card-img-top center-block" draggable="false"></center>
+          <div class="card-body">
+           <h5 class="card-title sub-header">Morning Bliss</h5>
+           <p class="card-text"><span class="price"> Php 40.00</span> <br> <br>
+            Start your day with a velvety smooth espresso layered with creamy steamed milk and a subtle touch of vanilla for a balanced, cozy flavor. Perfect for those who crave a gentle sweetness in their coffee.
+            <div class="buttons">
+              <a href="" class="btn btn-primary">Add to Cart</a>
+              <div class="btn-group" role="group" aria-label="Add product">
+                <button type="button" class="btn btn-arith"> + </button>
+                <button type="button" class="btn btn-arith quant"> 1 </button>
+                <button type="button" class="btn btn-arith"> - </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Card #3 -->
+        <div class="card col-sm-6 mb-3 mb-sm-0" style="width: 25rem;">
+          <center><img src="./assets/menu-items/Childhood Sweetheart.png" alt="" class="card-img-top center-block" draggable="false"></center>
+          <div class="card-body">
+           <h5 class="card-title sub-header">Childhood Sweetheart</h5>
+           <p class="card-text"><span class="price"> Php 120.00 (6 pieces)</span> <br> <br>
+            A sweet delight to satisfy your sweet tooth. Treat a sweetheart with a perfectly crumbly biscuit beneath a flavorful frosting and bask in your snack-induced daydream.</p>
+            
+            <div class="buttons">
+              <a href="" class="btn btn-primary">Add to Cart</a>
+              <div class="btn-group" role="group" aria-label="Add product">
+                <button type="button" class="btn btn-arith"> + </button>
+                <button type="button" class="btn btn-arith quant"> 1 </button>
+                <button type="button" class="btn btn-arith"> - </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+
+    <!-- BEST SELLERS END -->
+
+
+
   </div>
 
 
@@ -373,9 +366,8 @@
         <p class="copyright">© JAZMIN ERIKA M. NATOR 2024</p>
 
         <div class="social-media">
-          <a href=""><img class="social-media" src="./assets/icons/shopping-bag.svg" alt="email link" draggable="false"></a>
-          <a href=""><img class="social-media" src="./assets/icons/shopping-bag.svg" alt="facebook link" draggable="false"></a>
-          <a href=""><img class="social-media" src="./assets/icons/shopping-bag.svg" alt="instagram link" draggable="false"></a>
+          <a href=""><span class="fa fa-facebook-square fa-lg" alt="facebook link"></a>
+          <a href=""><span class="fa fa-instagram fa-lg" alt="email link"></a>
         </div>
       </section>
 
