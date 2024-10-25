@@ -59,6 +59,12 @@ body {
   padding: 30px;
 }
 
+.disclaimer {
+  font-size: small;
+  color: #7b7b7b;
+}
+
+
 /* NAVBAR */
 .navbar {
   background: #FFF2E1;
@@ -93,7 +99,7 @@ div.collapse.navbar-collapse {
 .marquee-text-track {
   display: flex;
   gap: 4.8rem;
-  animation: marquee-move-text 40s linear infinite;
+  animation: marquee-move-text 30s linear infinite;
   width: max-content;
   padding-left: 4.8rem;
 }
@@ -114,7 +120,7 @@ div.collapse.navbar-collapse {
 .marquee-image-track {
   display: flex;
   gap: 4.8rem;
-  animation: marquee-move-text 10s linear infinite;
+  animation: marquee-move-text 20s linear infinite;
   width: max-content;
   padding-left: 4.8rem;
 }
@@ -315,11 +321,6 @@ div.see-all-products {
       text-align: justify;
     }
 
-    p.disclaimer {
-      font-size: small;
-      color: #7b7b7b;
-    }
-
     section {
       display: flex;
       border-bottom: #acacac solid 2px;
@@ -421,13 +422,32 @@ footer {
   .headline-container {
     
     img {
-      opacity: 0; 
+      display: none;
       /* figure out how to hide this at certain breakpoints */
     }
 
     .headline {
-      h1, p {
+
+      h1 {
+        font-size: 50px;
         text-align: center;
+        margin: 10% 5% 0 5%;
+      }
+
+      p {
+        font-size: medium;
+        margin: 5% 10%;
+        text-align: justify;
+      }
+
+      a {
+        display: block;
+        max-width: 50%;
+        margin: 0 auto;
+      }
+
+      h1, p{
+        transition: all 0.3s ease-in-out;
       }
     }
 
@@ -565,4 +585,12 @@ div.FAQs {
     padding: 0;
     margin: 0;
   }
+
+  .container-content {
+
+    img {
+      margin-right: 5px;
+    }
+  }
+
 }
