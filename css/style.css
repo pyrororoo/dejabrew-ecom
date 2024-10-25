@@ -293,14 +293,14 @@ div.about-us.landing-page {
   gap: 2%;
 
   div.see-all-products {
-    
+    border: red solid thin;
     max-width: 40%;
-    position: relative;
 
     img.border-container {
       padding: 0;
       object-fit: cover;
-      max-width: 100%;
+      width: 100%;
+      height: 80%;
       box-shadow: none;
       border-radius: 1em;
     }
@@ -308,18 +308,16 @@ div.about-us.landing-page {
   }
 
   a {
-    position: absolute;
+    border: red solid thin;
     display: block;
     font-size: x-large;
     text-decoration: none;
-    bottom: 8px;
-    left: 8px;
   }
   
 
   div.collapsable {
 
-    /* border: red solid thin; */
+    border: red solid thin;
     margin: 20px 20px 20px 0px;
 
     h3 {
@@ -346,6 +344,10 @@ div.about-us.landing-page {
       border: none !important;
     }
 
+    section.collapsable {
+      border: red solid thin;
+      margin-bottom: 0;
+    }
   } 
 
   .location {
