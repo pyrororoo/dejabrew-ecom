@@ -514,6 +514,7 @@ div.FAQs {
     
     p, div.border-container, div.contact-info {
       max-width: 80%;
+      transition: all 0.3s ease-in-out;
     }
 
     div.contact-info {
@@ -525,7 +526,15 @@ div.FAQs {
         padding-top: 0;
       }
     }
+    
   }
 
+  @media screen and (max-width: 800px) {
+    p, div.border-container, div.contact-info {
+      max-width: 90%;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  
 }
 
