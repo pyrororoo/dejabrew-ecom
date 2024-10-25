@@ -21,13 +21,13 @@
   padding: .5em 4em !important;
   box-shadow: 0 0 0 0 #3C2F2F !important;
   font-family: 'Caraque Trial', sans-serif !important;
-  transition: all 0.3s ease-in-out; 
+  transition: all 0.1s ease-in-out; 
 }
 
 .btn-primary:hover {
   transform: translateY(-4px) translateX(-2px);
   box-shadow: 2px 5px 0 0 #3C2F2F !important;
-};
+}
 
 .btn-primary:active {
   transform: translateY(2px) translateX(1px);
