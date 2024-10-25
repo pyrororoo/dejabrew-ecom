@@ -117,6 +117,11 @@ div.collapse.navbar-collapse {
   height: 150px;
 }
 
+.marquee-image-track:hover, .marquee-text-track:hover{
+  animation-play-state: paused;
+}
+
+
 .marquee-image-track {
   display: flex;
   gap: 4.8rem;
@@ -147,12 +152,6 @@ div.collapse.navbar-collapse {
   
 }
 
-/* @keyframes marquee-stop-text {
-  to {
-    transform: translateX(0);
-  }
-  
-} */
 
 /* MARQUEE END */
 
@@ -281,7 +280,9 @@ div.menu {
   }
 }
 
-div.see-all-products {
+/* ABOUT US */
+
+div.about-us.landing-page {
 
   display: flex;
   flex-direction: row;
@@ -289,24 +290,32 @@ div.see-all-products {
   margin: 30px auto;
   border-radius: 2em !important;
   border: #3C2F2F solid 2px;
+  gap: 2%;
 
-  a {
-
-    max-width: 40%;
-    max-height: auto;
-    background: none !important;
-    border: none !important;
+  div.see-all-products {
     
-    img {
+    max-width: 40%;
+    position: relative;
+
+    img.border-container {
+      padding: 0;
+      object-fit: cover;
+      max-width: 100%;
+      box-shadow: none;
       border-radius: 1em;
-      border: #3C2F2F solid 2px;
-      margin: 20px;
     }
 
-    /* darken image on hover and add text "see all products" */
-  
   }
 
+  a {
+    position: absolute;
+    display: block;
+    font-size: x-large;
+    text-decoration: none;
+    bottom: 8px;
+    left: 8px;
+  }
+  
 
   div.collapsable {
 
@@ -356,6 +365,8 @@ div.see-all-products {
   .arrow:is(.collapsed) {
     transform: rotate(0deg);
   }
+
+/* ABOUT US END*/
 
 /* MENU END */
 
@@ -456,10 +467,10 @@ footer {
 
 @media screen and (max-width: 800px) { /* for phones and below*/
 
-  div.see-all-products {
+  div.about-us.landing-page {
     flex-direction: column;
 
-    a {
+    img {
       max-width: 100%;
     }
 
