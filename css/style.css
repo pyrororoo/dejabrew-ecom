@@ -402,6 +402,7 @@ footer {
   }
 
   .bottom {
+    
     padding: 50px 0;
     display: flex;
     justify-content: space-around;
@@ -449,22 +450,53 @@ footer {
   }
 }
 
+/* FOR ALL PAGES */
+.page {
 
-/* !!!! FAQs PAGE !!!! */
-
-div.FAQs {
-
-  h1 {
+  h1.heading.wavy {
     text-align: center;
     color:#FFF2E1;
     font-size: 3vmax;
     padding: 50px 0 80px 0;
   }
 
-  p, div.border-container{
+  .border-container{
     margin: 50px auto;
     max-width: 50%;
   }
+
+  @media screen and (max-width: 1200px) {
+    
+    .border-container, div.contact-info {
+      max-width: 80%;
+      transition: all 0.3s ease-in-out;
+    }
+
+    div.contact-info {
+      /* border: red solid thin; */
+      max-width: 100% !important;
+      flex-direction: column;
+
+      ul {
+        padding-top: 0;
+      }
+    }
+    
+  }
+
+  @media screen and (max-width: 800px) {
+    .border-container, div.contact-info {
+      max-width: 90%;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+}
+
+/* !!!! FAQs PAGE !!!! */
+
+div.FAQs {
+
 
   p {
     text-align: justify;
@@ -509,32 +541,28 @@ div.FAQs {
 
     }
   }
-
-  @media screen and (max-width: 1200px) {
-    
-    p, div.border-container, div.contact-info {
-      max-width: 80%;
-      transition: all 0.3s ease-in-out;
-    }
-
-    div.contact-info {
-      /* border: red solid thin; */
-      max-width: 100% !important;
-      flex-direction: column;
-
-      ul {
-        padding-top: 0;
-      }
-    }
-    
-  }
-
-  @media screen and (max-width: 800px) {
-    p, div.border-container, div.contact-info {
-      max-width: 90%;
-      transition: all 0.3s ease-in-out;
-    }
-  }
   
 }
 
+/* !!!! LOCATIONS PAGE !!!! */
+
+.locations.page {
+
+  .border-container {
+    max-width: 80%;
+  }
+
+  div.border-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+  }
+
+  img.border-container {
+    border-radius: 1em;
+    max-width: 30%;
+    max-height: auto;
+    padding: 0;
+    margin: 0;
+  }
+}
