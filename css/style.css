@@ -813,3 +813,40 @@ div.FAQs {
   }
 
 }
+
+
+/* !!!!! GIFT CARD PAGE !!!!! */
+
+.gift-card.page {
+
+  h3.heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    color: #239E86;
+
+    i {
+      display: block;
+      color: #239E86;
+    }
+
+  }
+
+  div.border-container {
+    max-width: 30%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    
+    div.border-container {
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    
+    div.border-container {
+      max-width: 80%;
+    }
+  }
+}
