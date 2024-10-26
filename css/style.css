@@ -102,6 +102,10 @@ span.nav-link {
   display: none;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 @media screen and (max-width:991.5px) {
   
   .nav-item.btn-group {
@@ -615,6 +619,10 @@ footer {
 
   @media screen and (max-width: 1200px) {
     
+    h1.heading {
+      font-size: 50px !important;
+    }
+
     .border-container, div.contact-info {
       max-width: 80%;
       transition: all 0.3s ease-in-out;
@@ -705,6 +713,10 @@ div.FAQs {
     display: flex;
     flex-direction: row;
     gap: 2%;
+
+    .daraga {
+      order: 1;
+    }
   }
 
   img.border-container {
@@ -713,6 +725,7 @@ div.FAQs {
     max-width: 30%;
     padding: 0;
     margin: 0;
+
   }
 
   .container-content {
@@ -727,4 +740,66 @@ div.FAQs {
     color:#239E86;
   }
 
+  @media screen and (max-width: 800px) {
+    div.border-container {
+      flex-direction: column;
+      .daraga {
+        order: 0; 
+      }
+    }
+
+    img.border-container {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+
+  }
+
+}
+
+
+/* !!!!! CONTACT US PAGE !!!!! */
+
+.contact-us.page {
+
+  h2 {
+    text-align: center;
+    color: #239E86;
+  }
+
+  section.collapsable {
+    border-top: #acacac solid 2px;
+    border-bottom: #acacac solid 2px;
+    margin: 10px 0 0 0;
+  }
+
+  h4.collapsable {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px 5px 5px;
+    
+
+    i {
+      display: block;
+      color: #854442;
+      transition: all 0.3s ease-in-out;
+    }
+
+    i:not(.collapsed) {
+      transform: rotate(180deg);
+    }
+  
+    i:is(.collapsed) {
+      transform: rotate(0deg);
+    }
+
+  }
+
+  .card {
+    border: none !important;
+  }
+
+  
+  
 }
