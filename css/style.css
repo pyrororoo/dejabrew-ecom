@@ -973,6 +973,17 @@ div.FAQs {
     
   }
 
+  .tab-pane {
+
+    hr {
+      border: #7b7b7b solid thin;
+    }
+
+    h3 {
+      margin: 0 20px 20px 20px;
+    }
+  }
+
 
 
   @media screen and (max-width:1000px) {
