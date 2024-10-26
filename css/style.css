@@ -803,3 +803,13 @@ div.FAQs {
   
   
 }
+
+/* !!!! WHO ARE WE PAGE !!!! */
+
+.who-are-we.page {
+
+  p.border-container  {
+    text-align: justify;
+  }
+
+}
