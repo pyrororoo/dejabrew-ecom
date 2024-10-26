@@ -81,14 +81,405 @@
    
   <div class="product-menu page">
 
-    <h1 class="heading wavy">Menu</h1>
-    
+
+    <h1 class="wavy heading">
+      Menu
+    </h1>
+
     <div class="border-container">
+
+      <!-- TABS -->
+
+      <ul class="nav nav-tabs" id="menuTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="coffee-tab" data-bs-toggle="tab" data-bs-target="#coffee-tab-pane" type="button" role="tab" aria-controls="coffee-tab-pane" aria-selected="true">
+            Coffee
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="cold-beverage-tab" data-bs-toggle="tab" data-bs-target="#cold-beverage-tab-pane" type="button" role="tab" aria-controls="cold-beverage-tab" aria-selected="true">
+            Beverages
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="meal-tab" data-bs-toggle="tab" data-bs-target="#meal-tab-pane" type="button" role="tab" aria-controls="meal-tab" aria-selected="true">
+            Meals
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="snack-tab" data-bs-toggle="tab" data-bs-target="#snack-tab-pane" type="button" role="tab" aria-controls="snack-tab" aria-selected="true">
+            Snacks
+          </button>
+        </li>
+
+      </ul>
+
+      <!-- TABS END -->
+    
+
+
+    <!-- TAB CONTENT -->
+
+    <div class="tab-content" id="menuTabsContent">
+
+
+
+      <!-- COFFEE -->
+      <div class="tab-pane fade show active" id="coffee-tab-pane" role="tabpanel" aria-labelledby="coffee-tab" tabindex="0">
+
+
+        <!-- products -->
+
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2  row-cols-2">
+
+          
+          <div class="col">
+
+            <a class="product" type="button" data-bs-toggle="modal" data-bs-target="#coffee1">
+              <div class="card prod-card">
+                <img src="../assets/menu-items/Bold and Brewtiful.png" alt="bold and brewtiful" class="card-img-top">
+                <div class="card-body">
+                  
+                  <div class="prod-info">
+                    <h5 class="prod-name">Bold and Brewtiful</h5>
+                    <p class="price">Php 50.00</p>
+                  </div>
+                
+                  <a class="fa fa-cart-plus"><span class="md-vis"> Add to cart</span></a>
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+          
+
+          <div class="col">
+
+            <a class="product" type="button" data-bs-toggle="modal" data-bs-target="#coffee2">
+              <div class="card prod-card">
+                <img src="../assets/menu-items/caramel-macchiato.png" alt="caramel cloud latte" class="card-img-top">
+                <div class="card-body">
+                  
+                  <div class="prod-info">
+                    <h5 class="prod-name">Caramel Cloud Latte</h5>
+                    <p class="price">Php 60.00</p>
+                  </div>
+                
+                  <a class="fa fa-cart-plus"><span class="md-vis"> Add to cart</span></a>
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="col">
+
+            <a class="product" type="button" data-bs-toggle="modal" data-bs-target="#coffee3">
+              <div class="card prod-card">
+                <img src="../assets/menu-items/Dark and Bitter.png" alt="dark and bitter" class="card-img-top">
+                <div class="card-body">
+                  
+                  <div class="prod-info">
+                    <h5 class="prod-name">Dark and Bitter</h5>
+                    <p class="price">Php 50.00</p>
+                  </div>
+                
+                  <a class="fa fa-cart-plus"><span class="md-vis"> Add to cart</span></a>
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="col">
+
+            <a class="product" type="button" data-bs-toggle="modal" data-bs-target="#coffee4">
+              <div class="card prod-card">
+                <img src="../assets/menu-items/Morning Bliss.png" alt="morning bliss" class="card-img-top">
+                <div class="card-body">
+                  
+                  <div class="prod-info">
+                    <h5 class="prod-name">Morning Bliss</h5>
+                    <p class="price">Php 40.00</p>
+                  </div>
+                
+                  <a class="fa fa-cart-plus"><span class="md-vis"> Add to cart</span></a>
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- COFFEE END-->
+
+
+
+      <!-- BEVERAGES-->
+      <div class="tab-pane fade" id="cold-beverage-tab-pane" role="tabpanel" aria-labelledby="cold-beverage-tab" tabindex="0">
+
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2  row-cols-2">
+
+          
+          <div class="col">
+
+            <a class="product" type="button" data-bs-toggle="modal" data-bs-target="#bev1">
+              <div class="card prod-card">
+                <img src="../assets/menu-items/lemonade.png" alt="lemonade" class="card-img-top">
+                <div class="card-body">
+                  
+                  <div class="prod-info">
+                    <h5 class="prod-name">Lemonade</h5>
+                    <p class="price">Php 20.00</p>
+                  </div>
+                
+                  <a class="fa fa-cart-plus"><span class="md-vis"> Add to cart</span></a>
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+          
+          <div class="col">
+
+            <a class="product" type="button" data-bs-toggle="modal" data-bs-target="#bev2">
+              <div class="card prod-card">
+                <img src="../assets/menu-items/Iced tea.png" alt="Iced tea" class="card-img-top">
+                <div class="card-body">
+                  
+                  <div class="prod-info">
+                    <h5 class="prod-name">Iced tea</h5>
+                    <p class="price">Php 20.00</p>
+                  </div>
+                
+                  <a class="fa fa-cart-plus"><span class="md-vis"> Add to cart</span></a>
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+        
+      </div>
+      <!-- BEVERAGES END-->
+
+
+
+      <!-- MEALS-->
+      <div class="tab-pane fade" id="meal-tab-pane" role="tabpanel" aria-labelledby="meal-tab" tabindex="0">
+
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2  row-cols-2">
+
+          
+          <div class="col">
+
+            <a class="product" type="button" data-bs-toggle="modal" data-bs-target="#meal1">
+              <div class="card prod-card">
+                <img src="../assets/menu-items/Chicken Adobo.png" alt="Chicken Adobo" class="card-img-top">
+                <div class="card-body">
+                  
+                  <div class="prod-info">
+                    <h5 class="prod-name">Chicken Adobo</h5>
+                    <p class="price">Php 50.00</p>
+                  </div>
+                
+                  <a class="fa fa-cart-plus"><span class="md-vis"> Add to cart</span></a>
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+          
+          <div class="col">
+
+            <a class="product" type="button" data-bs-toggle="modal" data-bs-target="#meal2">
+              <div class="card prod-card">
+                <img src="../assets/menu-items/Pork Adobo.png" alt="Pork Adobo" class="card-img-top">
+                <div class="card-body">
+                  
+                  <div class="prod-info">
+                    <h5 class="prod-name">Pork Adobo</h5>
+                    <p class="price">Php 50.00</p>
+                  </div>
+                
+                  <a class="fa fa-cart-plus"><span class="md-vis"> Add to cart</span></a>
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="col">
+
+            <a class="product" type="button" data-bs-toggle="modal" data-bs-target="#meal3">
+              <div class="card prod-card">
+                <img src="../assets/menu-items/Fusili Spinach and Tomato Pasta.png" alt="Fusili Spinach and Tomato Pasta" class="card-img-top">
+                <div class="card-body">
+                  
+                  <div class="prod-info">
+                    <h5 class="prod-name">Fusili Pasta</h5>
+                    <p class="price">Php 70.00</p>
+                  </div>
+                
+                  <a class="fa fa-cart-plus"><span class="md-vis"> Add to cart</span></a>
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="col">
+
+            <a class="product" type="button" data-bs-toggle="modal" data-bs-target="#meal4">
+              <div class="card prod-card">
+                <img src="../assets/menu-items/Creamy Carbonara.png" alt="Creamy Carbonara" class="card-img-top">
+                <div class="card-body">
+                  
+                  <div class="prod-info">
+                    <h5 class="prod-name">Creamy Carbonara</h5>
+                    <p class="price">Php 70.00</p>
+                  </div>
+                
+                  <a class="fa fa-cart-plus"><span class="md-vis"> Add to cart</span></a>
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="col">
+
+            <a class="product" type="button" data-bs-toggle="modal" data-bs-target="#meal4">
+              <div class="card prod-card">
+                <img src="../assets/menu-items/Rigatoni Pasta.png" alt="Rigatoni Pasta" class="card-img-top">
+                <div class="card-body">
+                  
+                  <div class="prod-info">
+                    <h5 class="prod-name">Rigatoni Pasta</h5>
+                    <p class="price">Php 70.00</p>
+                  </div>
+                
+                  <a class="fa fa-cart-plus"><span class="md-vis"> Add to cart</span></a>
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="col">
+
+            <a class="product" type="button" data-bs-toggle="modal" data-bs-target="#meal5">
+              <div class="card prod-card">
+                <img src="../assets/menu-items/Caesar Salad.png" alt="Caesar Salad" class="card-img-top">
+                <div class="card-body">
+                  
+                  <div class="prod-info">
+                    <h5 class="prod-name">Caesar Salad</h5>
+                    <p class="price">Php 60.00</p>
+                  </div>
+                
+                  <a class="fa fa-cart-plus"><span class="md-vis"> Add to cart</span></a>
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- MEALS END-->
+
+
+
+
+      <!-- SNACKS -->
+      <div class="tab-pane fade" id="snack-tab-pane" role="tabpanel" aria-labelledby="snack-tab" tabindex="0">
+
+        
+      </div>
+      <!-- SNACKS END-->
+
 
     </div>
 
+    <!-- TAB CONTENT -->
+    
+  
+    </div>
+
+
+
+
+
+
+
+
+
+    
+
+  <!-- COFFEE MODALS !!!! -->
+
+
+  <div class="modal fade" id="coffee1" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Product Information</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+
+        </div>
+
+        <div class="modal-footer">
+          
+          <div class="btn-group arith" role="group" aria-label="Add product">
+            <button type="button" class="btn btn-arith"> + </button>
+            <button type="button" class="btn btn-arith quant"> 1 </button>
+            <button type="button" class="btn btn-arith"> - </button>
+          </div>
+          <button type="button" class="btn btn-addtocart">Add to Cart</button>
+          
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- MODALS END!!!! -->
+
   </div>
   
+
+
+
+
   <!-- PAGE CONTENT END -->
 
    <!-- FOOTER -->
