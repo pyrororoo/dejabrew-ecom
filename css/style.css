@@ -299,6 +299,23 @@ div.menu {
       transition: all 0.1s ease-in-out;
     }
 
+    .descriptors {
+
+      .sub-header {
+        font-size: xx-large;
+      }
+      .price {
+        color: #7b7b7b;
+      }
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
     .card:hover{
       transform: translateY(-4px) translateX(-2px);
       box-shadow: 8px 8px #3C2F2F;
@@ -903,14 +920,14 @@ div.FAQs {
   }
 
   .prod-card:hover {
-    border: #239E86 solid 3px;
+    border: #239E86 solid 2px;
     transform: scale(1.05);
     box-shadow: 0px 0px 4px 3px #239e8546;
     transition: all 0.05s ease-in-out;
   }
 
   .prod-card:active {
-    border: #36c5a8 solid 3px;
+    border: #36c5a8 solid 2px;
   }
 
   img.card-img-top {
