@@ -72,6 +72,27 @@ a.regular-link:hover {
   color: #239E86;
 }
 
+.btn-group.arith {
+  border: #7b7b7b solid thin;
+
+  .btn {  
+    color: #3C2F2F;
+  }
+
+  .plus, .minus {
+    color: #7b7b7b !important;
+  }
+
+  .btn.btn-arith:hover {
+    background: #dadada;
+  }
+
+  .quant:hover {
+    cursor: text;
+  }
+
+}
+
 /* NAVBAR */
 .navbar {
   background: #FFF2E1;
@@ -316,26 +337,7 @@ div.menu {
       gap: 5%;
     }
 
-    .btn-group {
-      border: #7b7b7b solid thin;
 
-      .btn {  
-        color: #3C2F2F;
-      }
-
-      .plus, .minus {
-        color: #7b7b7b !important;
-      }
-
-      .btn.btn-arith:hover {
-        background: #dadada;
-      }
-
-      .quant:hover {
-        cursor: text;
-      }
-
-    }
 
 
 
@@ -848,5 +850,73 @@ div.FAQs {
     div.border-container {
       max-width: 80%;
     }
+  }
+}
+
+
+
+
+/* !!!!!! MENUUUUUUU !!!!!! */
+
+.product-menu.page {
+
+  div.border-container {
+    max-width: 90%;
+    border-radius: 1em;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  .row {
+    margin: 20px 0;
+  }
+
+  .prod-card {
+    border: #3C2F2F solid 2px;
+  
+    .card-body {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+  }
+
+  .card-body {
+
+
+    .prod-info {
+
+      /* border: red solid thin; */
+      h5 {
+        font-family: 'Caraque Trial', sans-serif;
+        color: #3C2F2F;
+        margin-bottom: 0 !important;
+      }
+
+      p {
+        color: #7b7b7b;
+        margin-bottom: 0 !important;
+      }
+    }
+
+    a.fa {
+      text-decoration: none;
+      text-align: center;
+      color: white;
+      font-size: large;
+      background: #239E86;
+      padding: 20px;
+      border-radius: 5em;
+    }
+    
+  }
+
+
+
+  @media screen and (max-width:475px) {
+    
   }
 }
