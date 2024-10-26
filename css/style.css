@@ -77,6 +77,10 @@ a.regular-link:hover {
   background: #FFF2E1;
 }
 
+.active {
+  color: #239E86 !important;
+}
+
 .navbar-nav{
   gap: 3vmax; 
 }
@@ -705,8 +709,8 @@ div.FAQs {
 
   img.border-container {
     border-radius: 1em;
+    object-fit: cover;
     max-width: 30%;
-    max-height: auto;
     padding: 0;
     margin: 0;
   }
@@ -716,6 +720,11 @@ div.FAQs {
     img {
       margin-right: 5px;
     }
+  }
+
+  i, span {
+    font-weight: bold;
+    color:#239E86;
   }
 
 }
