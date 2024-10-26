@@ -640,6 +640,36 @@ footer {
     max-width: 50%;
   }
 
+  
+  section.collapsable {
+    border-top: #acacac solid 2px;
+    border-bottom: #acacac solid 2px;
+    margin: 10px 0 0 0;
+  }
+
+  h4.collapsable {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px 5px 5px;
+    
+
+    i {
+      display: block;
+      color: #854442;
+      transition: all 0.3s ease-in-out;
+    }
+
+    i:not(.collapsed) {
+      transform: rotate(180deg);
+    }
+  
+    i:is(.collapsed) {
+      transform: rotate(0deg);
+    }
+
+  }
+
   @media screen and (max-width: 1200px) {
     
     h1.heading {
@@ -788,35 +818,6 @@ div.FAQs {
   h2 {
     text-align: center;
     color: #239E86;
-  }
-
-  section.collapsable {
-    border-top: #acacac solid 2px;
-    border-bottom: #acacac solid 2px;
-    margin: 10px 0 0 0;
-  }
-
-  h4.collapsable {
-
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 5px 5px 5px;
-    
-
-    i {
-      display: block;
-      color: #854442;
-      transition: all 0.3s ease-in-out;
-    }
-
-    i:not(.collapsed) {
-      transform: rotate(180deg);
-    }
-  
-    i:is(.collapsed) {
-      transform: rotate(0deg);
-    }
-
   }
 
   .card {
@@ -1083,6 +1084,8 @@ div.FAQs {
 
     .modal-title {
       color: #7b7b7b;
+      font-weight: 400;
+      font-size: medium;
     }
 
   }
@@ -1113,7 +1116,43 @@ div.FAQs {
 
     .description {
       text-align: justify;
-      margin: 0px 4%;
+      font-size: 14px;
+      
+    }
+
+    .collapsable {
+
+      border: 1px solid #d2d2d2;
+      border-radius: 10px;
+
+      h4.sub-header {
+        font-family: 'Roboto Mono', Consolas, sans-serif;
+        color: #7b7b7b !important;
+        font-size: 13px;
+        border: none;
+        i {
+          color: #7b7b7b;
+        }
+
+      }
+
+    }
+
+    .collapsable, .description, .card {
+      margin-left: 4%;
+      margin-right: 4%;
+    }
+
+    .card {
+      margin-top: 5px;
+      /* border: thin solid red; */
+      
+      p.card-body {
+        text-align: justify;
+        font-size: small;
+        padding: 0 5%;
+        color: #7b7b7b;
+      }
     }
 
   }
