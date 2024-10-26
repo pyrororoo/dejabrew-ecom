@@ -297,6 +297,10 @@ div.menu {
       border-radius: 2em;
       max-width: 82%;
       transition: all 0.1s ease-in-out;
+
+      img {
+        margin: 0 auto;
+      }
     }
 
     .descriptors {
@@ -1067,4 +1071,33 @@ div.FAQs {
   }
 
 
+}
+
+
+
+/* !!! MODAL !!! */
+
+.modal {
+
+  div.modal-body {
+
+    img {
+      max-width: 70%;
+      border: red solid thin;
+    }
+
+    .prod-name {
+      text-align: center;
+    }
+  }
+
+  .modal-footer {
+    justify-content: space-around;
+
+    h4.price {
+      font-family: 'Caraque Trial';
+      color: #239E86;
+    }
+
+  }
 }
