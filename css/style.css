@@ -2,7 +2,7 @@
 
 
 * {
-  font-family: 'Consolas', sans-serif;
+  font-family: 'Roboto mono', sans-serif;
   color: #3C2F2F;
   margin: 0;
   padding: 0;
@@ -1079,25 +1079,53 @@ div.FAQs {
 
 .modal {
 
-  div.modal-body {
+  .modal-header {
+
+    .modal-title {
+      color: #7b7b7b;
+    }
+
+  }
+
+  .modal-body {
 
     img {
       max-width: 70%;
-      border: red solid thin;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .prod-name, .volume {
+      text-align: center;
     }
 
     .prod-name {
-      text-align: center;
+      color: #854442;
+      font-family: 'Caraque Trial', 'Consolas', sans-serif;
+      font-size: 32px;
+      margin-bottom: 0px;
     }
+
+    .volume {
+      color: #7b7b7b;
+      font-weight: bold;
+    }
+
+    .description {
+      text-align: justify;
+      margin: 0px 4%;
+    }
+
   }
 
   .modal-footer {
     justify-content: space-around;
 
-    h4.price {
-      font-family: 'Caraque Trial';
+    .price {
+      font-family: 'Caraque Trial', sans-serif;
       color: #239E86;
     }
 
   }
+
 }
