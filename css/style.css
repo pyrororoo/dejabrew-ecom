@@ -1194,3 +1194,17 @@ div.FAQs {
   }
 
 }
+
+
+
+
+
+/* !!!! CART PAGE !!!! */
+
+.cart.page {
+
+  div.border-container {
+    max-width: 90%;
+    border-radius: 1em;
+  }
+}
