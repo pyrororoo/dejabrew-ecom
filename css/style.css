@@ -210,11 +210,11 @@ span.nav-link {
 .wavy {
   background: #239E86;
 
-  --mask:
-    radial-gradient(37.17px at 50% calc(100% - 52.5px),#000 99%,#0000 101%) calc(50% - 50px) 0/100px 100%,
-    radial-gradient(37.17px at 50% calc(100% + 27.5px),#0000 99%,#000 101%) 50% calc(100% - 25px)/100px 100% repeat-x;
-   -webkit-mask: var(--mask);
-           mask: var(--mask);
+  --mask: 
+    linear-gradient(to top,#0000 39px,#000 0),
+    radial-gradient(39px,#000 98%,#0000) bottom/72.15px 78px;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
 }
 
 .img-background {
@@ -261,11 +261,9 @@ span.nav-link {
 
 section.menu {
   background: #239E86;
-  --mask:
-    radial-gradient(37.17px at 50% 52.5px,#000 99%,#0000 101%) calc(50% - 50px) 0/100px 51% repeat-x,
-    radial-gradient(37.17px at 50% -27.5px,#0000 99%,#000 101%) 50% 25px/100px calc(51% - 25px) repeat-x,
-    radial-gradient(37.17px at 50% calc(100% - 52.5px),#000 99%,#0000 101%) calc(50% - 50px) 100%/100px 51% repeat-x,
-    radial-gradient(37.17px at 50% calc(100% + 27.5px),#0000 99%,#000 101%) 50% calc(100% - 25px)/100px calc(51% - 25px) repeat-x;
+  --mask: 
+    linear-gradient(0deg,#0000 78px,#000 0) 0 39px,
+    radial-gradient(39px,#000 98%,#0000) 50%/72.15px 78px repeat space;
   -webkit-mask: var(--mask);
           mask: var(--mask);
 }
