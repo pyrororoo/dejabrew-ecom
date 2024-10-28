@@ -836,6 +836,15 @@ div.FAQs {
     text-align: justify;
   }
 
+  .carousel-item img {
+    border-radius: 1em;
+  }
+
+  @media screen and (max-width: 800px) {
+    div.border-container {
+      padding: 10px ;
+    }
+  }
 }
 
 
