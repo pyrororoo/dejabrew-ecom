@@ -1476,3 +1476,55 @@ div.FAQs {
   }
 
 }
+
+
+.thank-you.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+
+  div.top {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top img {
+    max-height: 100px;
+  }
+
+  .top h1 {
+    color: #239E86;
+  }
+
+  div.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+
+    img {
+      max-width: 8%;
+      max-height: auto;
+    }
+
+    .text-group {
+      h2 {
+        font-size: large;
+        margin-bottom: 0;
+
+        b {
+          color: #239E86;
+        }
+      }
+
+      p {
+        color: #7b7b7b;
+      }
+    }
+    
+  }
+
+}
