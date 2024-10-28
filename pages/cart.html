@@ -81,48 +81,69 @@
    
   <div class="cart page">
 
-    <h1 class="heading wavy">Cart</h1>
+    <h1 class="heading wavy">Your Cart</h1>
     
     <div class="border-container">
 
       <div class="top">
         <h1>Your Cart</h1>
-        <a href="../pages/menu.html">Continue Browsing <span class="fa fa-arrow-right"></span></a>
+        <div class="return-to-menu">
+          <a href="../pages/menu.html">Continue Browsing <i class="fa fa-angle-right"></i></a> 
+        </div>
       </div>
+
+      <hr>
 
       <main class="content">
 
 
         <section class="products">
 
+
+          
           <div class="product-preview">
 
-            <img src="../assets/menu-items/Flat white.png" alt="">
+
 
             <div class="info">
+
               <h4 class="product-name">Flat White</h4>
               <h6 class="product-price">Php 60.00</h6>
+
+            </div>  
               
-              <div class="btn-group arith" role="group" aria-label="Add product">
-                <button type="button" class="btn btn-arith"> - </button>
-                <button type="button" class="btn btn-arith quant"> 1 </button>
-                <button type="button" class="btn btn-arith"> + </button>
+
+
+            <img class="product-image" src="../assets/menu-items/Flat white.png" alt="flat white">
+
+            <div class="buttons">
+
+              <div class="trash">
+                <span class="fa fa-trash"></span>
               </div>
 
+  
+              <div class="custom-arith">
+                <a class="minus fa fa-minus" type="button"></a>
+                <input type="text" value="1">
+                <a class="minus fa fa-plus" type="button"></a>
+              </div>
+              
             </div>
-
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             
+
           </div>
+
+
           
         </section>
 
-
+        <hr>
 
         <div class="check-out">
 
           <h3 class="subtotal"><span class="smaller-text">Subtotal</span> <span class="subtotal">Php 60.00</span></h3>
-          <a href="#" class="btn btn-primary">Check Out</a>
+          <a href="./check-out.html" class="btn btn-primary">Check Out</a>
         </div>
 
       </main>
