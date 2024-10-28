@@ -1527,4 +1527,24 @@ div.FAQs {
     
   }
 
+  @media screen and (max-width: 800px) {
+    .top h1 {
+      margin-top: 20px;
+      font-size: 24px !important;
+    }
+
+
+    .text-group {
+
+      h2 {
+        font-size: small !important;
+      }
+
+      p {
+        font-size: smaller !important;
+      }
+    }
+    
+  }
+
 }
