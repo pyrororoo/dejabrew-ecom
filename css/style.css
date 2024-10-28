@@ -366,6 +366,7 @@ div.menu {
 /* ABOUT US */
 
 div.about-us.landing-page {
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -588,7 +589,7 @@ footer {
       transition: all 0.3s ease-in-out;
 
       p {
-        span {
+        span.hide-mobile {
           display: none;
           transition: all 0.3s ease-in-out;
         }
